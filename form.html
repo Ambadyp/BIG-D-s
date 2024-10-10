@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>WELCOME TO FRESHERS WORLD !!!</h2>
+    <h3>REGISTRATION FORM</h3>
+
+    <form action="#" method="post">
+        <label for="name">NAME:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">AGE:</label>
+        <select id="age" name="age" required>
+            <option value="">SELECT</option>
+            </select><br><br>
+
+        <label for="password">PASSWORD:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="repassword">RETYPE PASSWORD:</label>
+        <input type="password" id="repassword" name="repassword" required><br><br>
+
+        <label>SELECT YOUR SECURITY QUESTION:</label><br>
+        <input type="radio" id="question1" name="question" value="pet_name" required>
+        <label for="question1">What is your pet name?</label><br>
+        <input type="radio" id="question2" name="question" value="best_friend">
+        <label for="question2">Who is your best friend?</label><br>
+        <input type="radio" id="question3" name="question" value="fav_color">
+        <label for="question3">What is your favourite color?</label><br>
+        <input type="radio" id="question4" name="question" value="fav_teacher">
+        <label for="question4">Who is your favourite teacher?</label><br><br>
+
+        <label for="answer">ANSWER OF SECURITY QUESTION:</label>
+        <input type="text" id="answer" name="answer" required><br><br>
+
+        <label for="email">EMAIL ID:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label>LANGUAGES KNOWNS:</label><br>
+        <input type="checkbox" id="malayalam" name="languages[]" value="malayalam">
+        <label for="malayalam">MALAYALAM</label>
+        <input type="checkbox" id="english" name="languages[]" value="english">
+        <label for="english">ENGLISH</label>
+        <input type="checkbox" id="hindi" name="languages[]" value="hindi">
+        <label for="hindi">HINDI</label><br><br>
+
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="cv">UPLOAD CV:</label>
+        <input type="file" id="cv" name="cv"><br><br>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
